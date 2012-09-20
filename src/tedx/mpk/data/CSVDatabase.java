@@ -19,7 +19,9 @@ public class CSVDatabase {
 	private List<Stop> stopList = new ArrayList<Stop>();
 	private Context context;
 
-	public Station findNearest(Point point) {
+	public Station findNearest(Point point) throws IOException {
+		if(stopList.size() == 0)
+			loadStops();
 		double min = Double.MAX_VALUE;
 		Station current = null;
 		for (Stop stop : stopList)
