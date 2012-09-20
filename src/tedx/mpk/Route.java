@@ -1,11 +1,16 @@
 package tedx.mpk;
 
-/**
- * Created with IntelliJ IDEA.
- * User: part
- * Date: 9/20/12
- * Time: 7:19 PM
- * To change this template use File | Settings | File Templates.
- */
+import java.util.List;
+
 public class Route {
+
+    private List<Line> listOfLines;
+
+    public List<Line> getListOfLines() {
+        return listOfLines;
+    }
+
+    public void setListOfLines(List<Line> listOfLines) {
+        this.listOfLines = listOfLines;
+    }
 }
