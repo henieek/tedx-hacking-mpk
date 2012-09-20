@@ -18,9 +18,7 @@ import android.view.ViewGroup.LayoutParams;
 public final class PlaceFragment extends Fragment {
     private static final String KEY_PLACE = "TestFragment:Place";
     private Place mPlace;
-    
-    public static String PLACE_KEY = "PLACE_KEY";
-    
+
 	private TextView mDescrptionText;
 	private ImageView mPlaceImage;
 	private Button mButton;
@@ -52,7 +50,7 @@ public final class PlaceFragment extends Fragment {
     		mButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                 	Intent intent = new Intent(getActivity(), RouteActivity.class);
-                	intent.putExtra(PLACE_KEY, mPlace);
+                	intent.putExtra(RouteActivity.EXTRA_PLACE, mPlace);
                 	startActivity(intent);
                 }
             });
