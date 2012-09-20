@@ -54,8 +54,6 @@ public class RouteActivity extends MapActivity implements LocationListener {
                 routeProvider.getRouteFromMyLocation(users, destination),
                 getResources().getDrawable(R.drawable.point_green)));
 
-        mapView.setClickable(true);
-
         mapController.animateTo(users);
         mapController.setZoom(15);
     }
