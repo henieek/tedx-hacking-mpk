@@ -32,8 +32,6 @@ public class PlacesManager {
         PLACES.add(miejsce);
     }
 
-
-
     public List<Place> getAllPlaces() {
         return PLACES;
     }
