@@ -35,13 +35,18 @@ public class CSVDatabase {
     public List<Line> findPath(Station a, Station b) throws IOException {
         PathFinder finder = new PathFinder();
         finder.target = (Stop) b;
-        finder.find((Stop) a, null);
+        boolean found = finder.find((Stop) a, null);
+        System.err.println("addLine !found? " + found);
         Stop current = (Stop) b;
         List<Stop> l = new ArrayList<Stop>();
+        System.err.println("addLine !src " + a.getName());
+        System.err.println("addLine !dest " + b.getName());
         while (current != null) {
             l.add(current);
+            System.err.println("addLinereal" + current.getName());
             current = finder.parents.get(current);
         }
+        System.err.println("addLine !nothing found");
 
         List<Line> lines = new ArrayList<Line>();
         Line line = new Line();
@@ -57,17 +62,28 @@ public class CSVDatabase {
         Set<Stop> visited = new HashSet<Stop>();
         Map<Stop, Stop> parents = new HashMap<Stop, Stop>();
 
-        boolean find(Stop s, Stop parent) {
-            visited.add(s);
-            parents.put(s, parent);
-            for (Stop n : s.edges) {
-                if (visited.contains(n)) continue;
-                if (n == target) {
-                    return true;
-                }
-                if (find(n, s)) return true;
-            }
-            return false;
+        boolean find(Stop s, Stop _) {
+        	Queue<Stop> l = new LinkedList<Stop>();
+        	l.add(s);
+        	s = null;
+        	_ = null;
+        	while(l.size() != 0) {
+        		Stop curr  = l.poll();
+        		if(curr == target) return true;
+        		visited.add(curr);
+        		System.err.println("Now " + curr + " edges " + curr.edges.size());
+        		for(Stop n: curr.edges) {
+        			if(!visited.contains(n)) {
+        				System.err.println("addLine dodaje! " + n.getName());
+        				parents.put(n, curr);
+        				visited.add(n);
+        				l.add(n);
+        			} else {
+        				System.err.println("addLine dupa " + n.getName());
+        			}
+        		}
+        	}
+        	return false;
         }
     }
 
@@ -95,8 +111,10 @@ public class CSVDatabase {
         List<String> line;
         while ((line = loader.nextRow()) != null) {
             String a = line.get(0);
-            String b = line.get(0);
-            if (stopMap.containsKey(a)) {
+            String b = line.get(1);
+            if (stopMap.containsKey(a) && stopMap.containsKey(b)) {
+            	//System.err.println("EDGE " + stopMap.get(a).getName() + " " + 
+            	//		stopMap.get(b).getName());
                 stopMap.get(a).edges.add(stopMap.get(b));
             }
         }

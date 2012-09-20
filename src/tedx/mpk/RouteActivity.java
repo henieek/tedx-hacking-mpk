@@ -46,7 +46,6 @@ public class RouteActivity extends MapActivity implements LocationListener {
         return true;
     }
 
-    @Override
     public void onLocationChanged(Location location) {
 
         GeoPoint users = new GeoPoint((int) (location.getLatitude()*1e6), (int) (location.getLongitude()*1e6));
@@ -58,17 +57,14 @@ public class RouteActivity extends MapActivity implements LocationListener {
         mapController.setZoom(15);
     }
 
-    @Override
     public void onStatusChanged(String s, int i, Bundle bundle) {
         //To change body of implemented methods use File | Settings | File Templates.
     }
 
-    @Override
     public void onProviderEnabled(String s) {
         //To change body of implemented methods use File | Settings | File Templates.
     }
 
-    @Override
     public void onProviderDisabled(String s) {
         //To change body of implemented methods use File | Settings | File Templates.
     }
