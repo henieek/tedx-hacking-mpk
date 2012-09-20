@@ -21,7 +21,7 @@ public class Line {
     }
 
     public List<Station> getStations() {
-        return new ArrayList<Station>(stations);
+        return stations;
     }
 
     public void setStations(List<Station> stations) {

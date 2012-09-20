@@ -47,7 +47,8 @@ public class CSVDatabase {
             current = finder.parents.get(current);
         }
         System.err.println("addLine !nothing found");
-
+        System.err.println("getListOfLines____" + l.size());
+        
         List<Line> lines = new ArrayList<Line>();
         Line line = new Line();
         line.setNumber(69);

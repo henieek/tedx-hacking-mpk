@@ -32,9 +32,9 @@ public class RouteProvider {
             Station stationDestination = csvDatabase.findNearest(destinationPoint);
 
             Toast.makeText(context, station.getName(), Toast.LENGTH_LONG).show();
-
+            
             route.getListOfLines().addAll(csvDatabase.findPath(station, stationDestination));
-
+            System.err.println("getListOfLines " + route.getListOfLines().get(0).getStations().size());
             return route;
         } catch (IOException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.

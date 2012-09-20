@@ -20,6 +20,7 @@ public class OverlaysFromRouteGenerator {
         List<GeoPoint> geoPoints = new ArrayList<GeoPoint>();
         for(Line line : route.getListOfLines()) {
             for(Station station : line.getStations()) {
+            	System.err.println("add-station " + station.getName());
                 GeoPoint currStationGeo = new GeoPoint(station.getLatitude(),
                         station.getLongitude());
                 if(lastPoint != null) {
