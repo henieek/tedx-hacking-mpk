@@ -35,6 +35,7 @@ public class RouteActivity extends MapActivity implements LocationListener {
         setContentView(R.layout.activity_map);
 
         mapView = (MapView) findViewById(R.id.mapview);
+        mapView.setClickable(true);
         mapController = mapView.getController();
         overlays = mapView.getOverlays();
         destination = (Place) getIntent().getSerializableExtra(EXTRA_PLACE);
