@@ -1,61 +1,62 @@
 package tedx.mpk;
 
+import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
+
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.Gravity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.LinearLayout.LayoutParams;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.view.ViewGroup.LayoutParams;
 
 public final class TestFragment extends Fragment {
-    private static final String KEY_CONTENT = "TestFragment:Content";
-
-    public static TestFragment newInstance(String content) {
+    private static final String KEY_PLACE = "TestFragment:Place";
+    private Place mPlace;
+    
+	private TextView mDescrptionText;
+	private ImageView mPlaceImage;
+	
+    public static TestFragment newInstance(Place place) {
         TestFragment fragment = new TestFragment();
 
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < 20; i++) {
-            builder.append(content).append(" ");
-        }
-        builder.deleteCharAt(builder.length() - 1);
-        fragment.mContent = builder.toString();
+        fragment.mPlace = place;
 
         return fragment;
     }
 
-    private String mContent = "???";
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if ((savedInstanceState != null) && savedInstanceState.containsKey(KEY_CONTENT)) {
-            mContent = savedInstanceState.getString(KEY_CONTENT);
+        if ((savedInstanceState != null) && savedInstanceState.containsKey(KEY_PLACE)) {
+            mPlace = (Place) savedInstanceState.getSerializable(KEY_PLACE);
         }
+        
+
+       	
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        TextView text = new TextView(getActivity());
-        text.setGravity(Gravity.CENTER);
-        text.setText(mContent);
-        text.setTextSize(20 * getResources().getDisplayMetrics().density);
-        text.setPadding(20, 20, 20, 20);
-
-        LinearLayout layout = new LinearLayout(getActivity());
-        layout.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
-        layout.setGravity(Gravity.CENTER);
-        layout.addView(text);
-
-        return layout;
+    public void onViewCreated(View view, Bundle savedInstanceState){
+           	mDescrptionText = (TextView)view.findViewById(R.id.description_text);
+           	mPlaceImage = (ImageView)view.findViewById(R.id.monument_image);
+    		mDescrptionText.setText(mPlace.getName());
+            UrlImageViewHelper.setUrlDrawable(mPlaceImage, mPlace.getImageUrl());    }
+    
+	@Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.monument_fragment, null);
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString(KEY_CONTENT, mContent);
+        outState.putSerializable(KEY_PLACE, mPlace);
     }
 }

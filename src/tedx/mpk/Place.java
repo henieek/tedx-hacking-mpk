@@ -1,6 +1,8 @@
 package tedx.mpk;
 
-public class Place {
+import java.io.Serializable;
+
+public class Place implements Serializable {
 
     private double latitude;
     private double longitude;
