@@ -1,0 +1,549 @@
+1,Starowiślna,s
+2,Armii Krajowej,a
+3,Wrocławska,w
+4,Kościuszki,k
+5,Medweckiego,m
+6,Płk.Dąbka,p
+7,Mierzeja Wiślana,m
+8,Lipska,l
+9,Saska,s
+10,Płaszowska,p
+11,Powstanców Wielkopolskich,p
+12,Stoczniowców,s
+13,Ofiar Dąbia,o
+14,Al. Pokoju,a
+15,Lubicz,l
+16,Pawia,p
+17,Warszawska,w
+18,Basztowa,b
+19,Prądnicka,p
+20,Opolska,o
+21,Mackiewicza,m
+22,Dożynkowa,d
+23,Al. Jana Pawła II,a
+24,Doktora Twardego,d
+25,Nowohucka,n
+26,Zielone Wzgórze,z
+27,Sławka,s
+28,Makuszyńskiego,m
+29,Ujastek,u
+30,Al. Solidarności,a
+31,Balicka,b
+32,Bronowicka,b
+33,Królewska,k
+34,Al. Słowackiego,a
+35,Mogilska,m
+36,Nowolipki,n
+37,Łowińskiego,ł
+38,Kocmyrzowska,k
+39,Bulwarowa,b
+40,Radzikowskiego,r
+41,Ojcowska,o
+42,Stojałowskiego,s
+43,Witosa,w
+44,Łużycka,ł
+45,Trybuny Ludów,t
+46,Kamieńskiego,k
+47,Konopnickiej,k
+48,Halszki,h
+49,Dietla,d
+50,Mateczny,m
+51,Stradomska,s
+52,Surzyckiego,s
+53,Al. 29 Listopada,a
+54,Nowy Kleparz,n
+55,Westerplatte,w
+56,Straszewskiego,s
+57,Podwale,p
+58,Dunajewskiego,d
+59,Lubomirskiego,l
+60,Beliny-Prażmowskiego,b
+61,Olszyny,o
+62,Łukasiewicza,ł
+63,Pilotów,p
+64,Młyńska,m
+65,Ułanów,u
+66,Meissnera,m
+67,Conrada,c
+68,Malborska,m
+69,Wielicka,w
+70,Na Zjeździe,n
+71,Grzegórzecka,g
+72,Dobrego Pasterza,d
+73,Majora,m
+74,Powstańców,p
+75,Strzelców,s
+76,Lublańska,l
+77,Nowosądecka,n
+78,Na Kozłówce,n
+79,Lindego,l
+80,Podchorążych,p
+81,Kijowska,k
+82,Al. Mickiewicza,a
+83,Fieldorfa Nila,f
+84,Krowoderskich Zuchów,k
+85,Al. Krasińskiego,a
+86,Czarnowiejska,c
+87,Teligi,t
+88,Nawojki,n
+89,Aleksandry,a
+90,Cechowa,c
+91,Kosocicka,k
+92,Niebieska,n
+93,Rżącka,r
+94,Piłsudskiego,p
+95,Stachiewicza,s
+96,Makowskiego,m
+97,Różyckiego,r
+98,Łokietka,ł
+99,Batalionu Skała AK,b
+100,Wyki,w
+101,Pachońskiego,p
+102,Piaszczysta,p
+103,Zakopiańska,z
+104,Borek Fałęcki,b
+105,Jugowicka,j
+106,Myślenicka,m
+107,Podmokła,p
+108,Wadowicka,w
+109,Kurniki,k
+110,Sucha,s
+111,Kąpielowa,k
+112,Chałubińskiego,c
+113,Szybisko,s
+114,Łagiewniki,ł
+115,Brożka,b
+116,Al. Przyjaźni,a
+117,Andersa,a
+118,Bieńczycka,b
+119,Kalwaryjska,k
+120,Obrońców Modlina,o
+121,Chełmska,c
+122,Olszanicka,o
+123,Kasztanowa,k
+124,Królowej Jadwigi,k
+125,Młodziejowice,m
+126,Focha,f
+127,Grota Roweckiego,g
+128,Kapelanka,k
+129,Monte Cassino,m
+130,Bułhaka,b
+131,Wiślicka,w
+132,Srebrnych Orłów,s
+133,Żeromskiego,ż
+134,Mikołajczyka,m
+135,Obrońców Krzyża,o
+136,Piasta Kołodzieja,p
+137,Piastowska,p
+138,Igrców,i
+139,Al. 3 Maja,a
+140,Wileńska,w
+141,Czerwonego Prądnika,c
+142,Brogi,b
+143,Miechowity,m
+144,Stella-Sawickiego,s
+145,Popielidów,p
+146,Kruszwicka,k
+147,Perkuna,p
+148,Struga,s
+149,Siewna,s
+150,Bociana,b
+151,Św. Gertrudy,ś
+152,Krakowska,k
+153,Wybickiego,w
+154,Malczewskiego,m
+155,Księcia Józefa,k
+156,Limanowskiego,l
+157,Broniewskiego,b
+158,Most Grunwaldzki,m
+159,Sawiczewskich,s
+160,Kuryłowicza,k
+161,Drużbackiej,d
+162,Kostaneckiego,k
+163,Jakubowskiego,j
+164,Kobierzyńska,k
+165,Babińskiego,b
+166,Skotnicka,s
+167,Żelazowskiego,ż
+168,Krzemieniecka,k
+169,Rybitwy,r
+170,Szparagowa,s
+171,Półłanki,p
+172,Nad Drwiną,n
+173,Rączna,r
+174,Przewóz,p
+175,Al. Róż,a
+176,Igołomska,i
+177,Jeziorko,j
+178,Bałuckiego,b
+179,Praska,p
+180,Tyniecka,t
+181,Dąbrowa,d
+182,Bogucianka,b
+183,Bolesława Śmiałego,b
+184,Gaik,g
+185,Na Załęczu,n
+186,Sołtysowska,s
+187,Budowlanych,b
+188,Architektów,a
+189,Gustawa Morcinka,g
+190,Leśna,l
+191,Dunikowskiego,d
+192,Mościckiego,m
+193,Sieroszewskiego,s
+194,Klasztorna,k
+195,Lesisko,l
+196,Zachemskiego,z
+197,Orkana,o
+198,Kłosowa,k
+199,Truskawkowa,t
+200,Kąkolowa,k
+201,Branicka,b
+202,Karaszewicza-Tokarzewskiego,k
+203,Szymańskiego,s
+204,Wojciechowskiego,w
+205,Jagiełły,j
+206,Wańkowicza,w
+207,Zawiła,z
+208,Borkowska,b
+209,Forteczna,f
+210,Judyma,j
+211,Sielska,s
+212,Zawiszy,z
+213,Krzyżańskiego,k
+214,Matematyków Krakowskich,m
+215,Golkowice,g
+216,Podbipięty,p
+217,Trzcinowa,t
+218,Rzepakowa,r
+219,Suchy Jar,s
+220,Dymarek,d
+221,Karowa,k
+222,Balice,b
+223,Kałuży,k
+224,Wrobela,w
+225,Sidzina Las,s
+226,Wrony,w
+227,Ćwiklińskiej,ć
+228,Mała Góra,m
+229,Łaczka,ł
+230,Stolarza,s
+231,Potrzask,p
+232,Pruszyńskiego,p
+233,Drożdżowa,d
+234,Krzywda,k
+235,Mirowska,m
+236,Piekary,p
+237,Liszki,l
+238,Wyźrał,w
+239,Zagacie,z
+240,Czernichów,c
+241,Kryspinów,k
+242,Kaszów,k
+243,Nowa Wieś Szlachecka,n
+244,Jeziorzany,j
+245,Ściejowice,ś
+246,Aleksandrowice,a
+247,Morawica,m
+248,Budzyń,b
+249,Cholerzyn,c
+250,Mników,m
+251,Czułów,c
+252,Jancarza,j
+253,Dominikańska,d
+254,Zwierzyniecka,z
+255,Karmelicka,k
+256,Bronowice,b
+257,Kopiec Wandy,k
+258,Cichy Kącik,c
+259,Legionów,l
+260,Rakowicka,r
+261,Skawina,s
+262,Radziszowska,r
+263,Radziszów,r
+264,Pasternik,p
+265,Żywiecka,ż
+266,Niemcewicza,n
+267,Kościuszkowców,k
+268,Poległych w Krzesławicach,p
+269,Libertów,l
+270,Mrozowa,m
+271,Długa,d
+272,Kamienna,k
+273,Bronowice Nowe,b
+274,Okulickiego,o
+275,Konary,k
+276,Węgrzce,w
+277,Bibice,b
+278,Michałowice,m
+279,Masłomiąca,m
+280,Więcławice,w
+281,Pielgrzymowice,p
+282,Franciszkańska,f
+283,Kozierów,k
+284,Żerkowice,ż
+285,Krasieniec,k
+286,Narama,n
+287,Pleszowska,p
+288,Glogera,g
+289,Zielonki,z
+290,Gromadzka,g
+291,Wyciąska,w
+292,Drożyska,d
+293,Brzeska,b
+294,Niepołomice,n
+295,Bora-Komorowskiego,b
+296,Garlica,g
+297,Wola Zachariaszowska,w
+298,Górna Wieś,g
+299,Szczyglice,s
+300,Chrosna,c
+301,Modlniczka,m
+302,Zabierzów,z
+303,Brzoskwinia,b
+304,Lusina,l
+305,Kraśnik,k
+306,Rząska,r
+307,Batowice,b
+308,Bolechowice,b
+309,Zelków,z
+310,Kochanów,k
+311,Rudawa,r
+312,Młynka,m
+313,Poronińska,p
+314,Prandoty,p
+315,Raciborowice,r
+316,Zastów,z
+317,Wielopole,w
+318,Podgórki Tynieckie,p
+319,Agatowa,a
+320,Rostworowskiego,r
+321,Petrażyckiego,p
+322,Taklińskiego,t
+323,Smoleńskiego,s
+324,Opatkowice,o
+325,Zachodnia,z
+326,Łutnia,ł
+327,Dworcowa,d
+328,Lubocka,l
+329,Wadowska,w
+330,Glinik,g
+331,Spławy,s
+332,Węgrzynowicka,w
+333,Organki,o
+334,Bystronia,b
+335,Godebskiego,g
+336,Isep,i
+337,Zatyka,z
+338,Bieżanowska,b
+339,Zarzyckiego,z
+340,Sucharskiego,s
+341,Wrząsowice,w
+342,Dąbrówki,d
+343,Ochojno,o
+344,Rzeszotary,r
+345,Świątniki Górne,ś
+346,Mogilany,m
+347,Na Błonie,n
+348,Al. Powstania Warszawskiego,a
+349,Ptaszyckiego,p
+350,Białoprądnicka,b
+351,Górnickiego,g
+352,Kotlarska,k
+353,Buków,b
+354,Burów,b
+355,Chorowice,c
+356,Kulerzów,k
+357,Wołowice,w
+358,Grabie,g
+359,Merkuriusza Polskiego,m
+360,Banachiewicza,b
+361,Domagały,d
+362,Wieliczka,w
+363,Jasnogórska,j
+364,Nadbrzezie,n
+365,Dąbrowskiej,d
+366,Beskidzka,b
+367,Klonowica,k
+368,Siostry Faustyny,s
+369,Fredry,f
+370,Tischnera,t
+371,Czerwiakowskiego,c
+372,Biskupińska,b
+373,Zagórzyce Stare,z
+374,Zagórzyce Dworskie,z
+375,Bobrzyńskiego,b
+376,Św. Idziego,ś
+377,Łuczanowicka,ł
+378,Zielna,z
+379,Herberta,h
+380,Landaua,l
+381,Korpala,k
+382,Kużnicy Kołłątajowskiej,k
+383,Niewodniczańskiego,n
+384,Lubostroń,l
+385,Centralna,c
+386,Ciepłownicza,c
+387,Chełmońskiego,c
+388,Lipowskiego,l
+389,Darwina,d
+390,Popiełuszki,p
+391,Botewa,b
+392,Bartla,b
+393,Łanowa,ł
+394,Rzebika,r
+395,Motyla,m
+396,Goszczyńskiego,g
+397,Klimeckiego,k
+398,Brandla,b
+399,Blokowa,b
+400,Bunscha,b
+401,Luborzyca,l
+402,Wola Luborzycka,w
+403,Goszyce,g
+404,Skrzeszowice,s
+405,Prusy,p
+406,Sulechów,s
+407,Kocmyrzów,k
+408,Dojazdów,d
+409,Sodfiny,s
+410,Głęboka,g
+411,Wróżenicka,w
+412,Spiechowicza,s
+413,Zabłocie,z
+414,Jodłowa,j
+415,Rzemieślnicza,r
+416,Skrzyneckiego,s
+417,Borelowskiego,b
+418,Modlnica,m
+419,Szyce,s
+420,Wielka Wieś,w
+421,Biały Kościół,b
+422,Murownia,m
+423,Czajowice,c
+424,Bębło,b
+425,Będkowice,b
+426,Tomaszowice,t
+427,Trojadyn,t
+428,Senatorska,s
+429,Powstańców Śląskich,p
+430,Turowicza,t
+431,Polonijna,p
+432,Serkowskiego,s
+433,Warneńczyka,w
+434,Wojska Polskiego,w
+435,Sikorskiego,s
+436,Obwodnica autostradowa,o
+437,Wita Stwosza,w
+438,Nawojowa Góra,n
+439,Pisary,p
+440,Dubie,d
+441,Radwanowice,r
+442,Brzezinka,b
+443,Kobylany,k
+444,Więckowice,w
+445,Brzezie,b
+446,Ujazd,u
+447,Podgórska,p
+448,Powiśle,p
+449,Lea,l
+450,Zielińskiego,z
+451,Weissa,w
+452,Czerwieńskiego,c
+453,Jaremy,j
+454,Marszowiec,m
+455,Grunwaldzka,g
+456,Wieliczka Dembowskiego,w
+457,Słowackiego,s
+458,Wieliczka Asnyka,w
+459,Rzozów,r
+460,Gołuchowice,g
+461,Polanka Hallera,p
+462,Borek Szlachecki,b
+463,Zelczyna,z
+464,Wielkie Drogi,w
+465,Jaśkowice,j
+466,Łepkowskiego,ł
+467,Kalinowskiego,k
+468,Bohomolca,b
+469,Głowackiego,g
+470,Kokotów,k
+471,Czarnochowice,c
+472,Cystersów,c
+473,Brodowicza,b
+474,Wiatra,w
+475,Sawy-Calińskiego,s
+476,Pysocice,p
+477,Stopki,s
+478,Tunel,t
+479,Ujastek Mogilski,u
+480,Czułówek,c
+481,Rusocice,r
+482,Kłokoczyn,k
+483,Ratanice,r
+484,Przeginia Narodowa,p
+485,Przeginia Duchowna,p
+486,Łojasiewicza,ł
+487,Niepokalanej Marii Panny,n
+488,Dębowa,d
+489,Siwka,s
+490,Krzysztoforzyce,k
+491,Puszkarska,p
+492,Gminna,g
+493,Wysłouchów,w
+494,Autostrada,a
+495,Zielony Most,z
+496,Kuklińskiego,k
+497,Herlinga-Grudzińskiego,h
+498,Owczary,o
+499,Wiktorowice,w
+500,Zabierzów Bocheński,z
+501,Wola Batorska,w
+502,Brzegi,b
+503,Ochmanów,o
+504,Zakrzów,z
+505,Podłęże,p
+506,Staniątki,s
+507,Wieliczka Piłsudskiego,w
+508,Ratajów,r
+509,Niedźwiedź,n
+510,Polanowice,p
+511,Marszowice,m
+512,Wysiołek Luborzycki,w
+513,Winnicka,w
+514,Książniczki,k
+515,Kończyce,k
+516,Zarzecze,z
+517,Rybna,r
+518,Wimmera,w
+519,Grabska,g
+520,Dąbrowa Szlachecka,d
+521,28 lipca 1943,2
+880,Do Sanktuarium Bożego Miłosierdzia,d
+881,Zabawa,z
+882,Mała Wieś,m
+883,Sułków,s
+884,Skawina Energetyków,s
+885,Ochodza,o
+886,Al. Armii Krajowej,a
+887,Płk. Dąbka,p
+888,Al. Beliny-Prażmowskiego,a
+889,Al. Kijowska,a
+890,Fieldorfa-Nila,f
+891,Władysława Łokietka,w
+892,Batalionu  Skała  AK,b
+893,Al. Andersa,a
+894,Al. Kasztanowa,a
+895,Al. Focha,a
+896,Grota-Roweckiego,g
+897,Morcinka,m
+898,Władysława Jagiełły,w
+899,Legionów Piłsudskiego,l
+900,Al. Bora-Komorowskiego,a
+901,Al. Skrzyneckiego,a
+902,Al. Powstańców Śląskich,a
+903,Batorego,b
+904,Garbarska,g
+905,Śliwiaka,ś
+906,Leśmiana,l
+907,Bogucicka,b
