@@ -41,8 +41,8 @@ public class CSVDatabase {
 		}
 	}
 
-	static long convertCoordFromString(String t) {
-		return (long) (Double.valueOf(t) * 1000 * 1000);
+	static int convertCoordFromString(String t) {
+		return (int) (Double.valueOf(t) * 1000 * 1000);
 	}
 	
 	class CSVLoader {
