@@ -1,5 +1,6 @@
 package tedx.mpk;
 
+import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -7,15 +8,17 @@ import android.graphics.Point;
 import android.graphics.drawable.Drawable;
 import com.google.android.maps.*;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class OverlaysFromRouteGenerator {
 
-    public List<Overlay> getOverlaysForRoute(Route route) {
+    public List<Overlay> getOverlaysForRoute(Route route, Drawable stationDrawable) {
         GeoPoint lastPoint = null;
         List<Overlay> overlays = new LinkedList<Overlay>();
 
+        List<GeoPoint> geoPoints = new ArrayList<GeoPoint>();
         for(Line line : route.getListOfLines()) {
             for(Station station : line.getStations()) {
                 GeoPoint currStationGeo = new GeoPoint(station.getLatitude(),
@@ -23,9 +26,12 @@ public class OverlaysFromRouteGenerator {
                 if(lastPoint != null) {
                     overlays.add(0, new DirectionPathOverlay(lastPoint, currStationGeo, Color.RED));
                 }
+                geoPoints.add(currStationGeo);
                 lastPoint = currStationGeo;
             }
         }
+        MarkersItemizedOverlay itemized = new MarkersItemizedOverlay(geoPoints, stationDrawable);
+        overlays.add(itemized);
 
         return overlays;
     }

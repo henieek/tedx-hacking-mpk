@@ -30,7 +30,8 @@ public class RouteActivity extends MapActivity {
 
         overlays.clear();
         overlays.addAll(overlaysFromRouteGenerator.getOverlaysForRoute(
-                routeProvider.getRouteFromMyLocation(new GeoPoint(50065608, 19946880), wawelCastle)));
+                routeProvider.getRouteFromMyLocation(new GeoPoint(50065608, 19946880), wawelCastle),
+                getResources().getDrawable(R.drawable.point_green)));
 
         mapView.setClickable(true);
 
