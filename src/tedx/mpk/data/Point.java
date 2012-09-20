@@ -2,7 +2,7 @@ package tedx.mpk.data;
 
 import static java.lang.Math.pow;
 
-class Point {
+public class Point {
 	
 	public Point(long x, long y) {
 		this.x = x;

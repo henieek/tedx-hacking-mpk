@@ -1,4 +1,3 @@
-
 package tedx.mpk;
 
 import android.content.Context;
@@ -19,7 +18,7 @@ public class RouteActivity extends MapActivity implements LocationListener {
     private MapController mapController;
     private List<Overlay> overlays;
 
-    private RouteProvider routeProvider = new RouteProvider();
+    private RouteProvider routeProvider;
     private OverlaysFromRouteGenerator overlaysFromRouteGenerator = new OverlaysFromRouteGenerator();
 
     private LocationManager locationManager;
@@ -29,6 +28,7 @@ public class RouteActivity extends MapActivity implements LocationListener {
     @Override
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
+        routeProvider = new RouteProvider(this);
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         String provider = locationManager.getBestProvider(new Criteria(), true);
         locationManager.requestLocationUpdates(provider, 400, 1, this);
@@ -46,7 +46,7 @@ public class RouteActivity extends MapActivity implements LocationListener {
         return true;
     }
 
-
+    @Override
     public void onLocationChanged(Location location) {
 
         GeoPoint users = new GeoPoint((int) (location.getLatitude()*1e6), (int) (location.getLongitude()*1e6));
@@ -58,17 +58,17 @@ public class RouteActivity extends MapActivity implements LocationListener {
         mapController.setZoom(15);
     }
 
-
+    @Override
     public void onStatusChanged(String s, int i, Bundle bundle) {
         //To change body of implemented methods use File | Settings | File Templates.
     }
 
-
+    @Override
     public void onProviderEnabled(String s) {
         //To change body of implemented methods use File | Settings | File Templates.
     }
 
-
+    @Override
     public void onProviderDisabled(String s) {
         //To change body of implemented methods use File | Settings | File Templates.
     }

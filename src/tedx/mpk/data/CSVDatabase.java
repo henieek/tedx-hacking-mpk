@@ -21,7 +21,11 @@ public class CSVDatabase {
 	private Map<String, Stop> stopMap = new TreeMap<String, Stop>();
 	private Context context;
 
-	public Station findNearest(Point point) throws IOException {
+    public CSVDatabase(Context context) {
+        this.context = context;
+    }
+
+    public Station findNearest(Point point) throws IOException {
 		if(stopList.size() == 0)
 			loadStops();
 		double min = Double.MAX_VALUE;
@@ -75,6 +79,7 @@ public class CSVDatabase {
 		List<String> line;
 		while((line=loader.nextRow()) != null)
 		{
+            if(line.size() < 6) continue;
 			Stop stop;
 			stopList.add(stop=new Stop(line.get(1),
 						convertCoordFromString(line.get(4)),
@@ -97,7 +102,7 @@ public class CSVDatabase {
 	}
 
 	static int convertCoordFromString(String t) {
-		return (int) (Double.valueOf(t) * 1000 * 1000);
+		return (int) (Double.valueOf(t) * 1e6);
 	}
 	
 	class CSVLoader {

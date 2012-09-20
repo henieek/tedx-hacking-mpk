@@ -7,7 +7,7 @@ import tedx.mpk.Station;
 
 class Stop extends Station {
 	
-	public Stop(String name,int lon,int lat)
+	public Stop(String name,int lat,int lon)
 	{
 		super();
 		setName(name);
