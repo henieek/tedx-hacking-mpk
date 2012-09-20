@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal" 
-    >
     
-        <TextView
-            android:id="@+id/description_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="10dip"
+    android:orientation="vertical" >
 
-            >
-        </TextView>
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         
-       <ImageView
-            android:id="@+id/monument_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10dip" >
+    </TextView>
 
-            />
+    <ImageView
+        android:id="@+id/monument_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
        
-       <Button
-         android:id="@+id/choose_button"
-	     android:layout_height="wrap_content"
-	     android:layout_width="wrap_content"
-	     android:text="@string/choose_place"
-	      />
-</LinearLayout>
+        android:layout_centerInParent="true" />
+
+    <ImageButton
+        android:id="@+id/choose_button"
+        android:src="@drawable/our_button"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/choose_place"
+        />
+
+</RelativeLayout>

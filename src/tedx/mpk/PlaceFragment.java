@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.ViewGroup.LayoutParams;
@@ -21,7 +22,7 @@ public final class PlaceFragment extends Fragment {
 
 	private TextView mDescrptionText;
 	private ImageView mPlaceImage;
-	private Button mButton;
+	private ImageButton mButton;
 	
     public static PlaceFragment newInstance(Place place) {
         PlaceFragment fragment = new PlaceFragment();
@@ -46,7 +47,7 @@ public final class PlaceFragment extends Fragment {
            	mDescrptionText = (TextView)view.findViewById(R.id.description_text);
            	mPlaceImage = (ImageView)view.findViewById(R.id.monument_image);
     		mDescrptionText.setText(mPlace.getName());
-    		mButton = (Button)view.findViewById(R.id.choose_button);
+    		mButton = (ImageButton)view.findViewById(R.id.choose_button);
     		mButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                 	Intent intent = new Intent(getActivity(), RouteActivity.class);
