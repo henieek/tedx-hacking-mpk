@@ -6,8 +6,8 @@ import java.util.List;
 import tedx.mpk.Station;
 
 class Stop extends Station {
-	
-	public Stop(String name,int lat,int lon)
+
+    public Stop(String name,int lat,int lon)
 	{
 		super();
 		setName(name);

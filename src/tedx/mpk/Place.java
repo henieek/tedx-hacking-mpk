@@ -4,24 +4,24 @@ import java.io.Serializable;
 
 public class Place implements Serializable {
 
-    private double latitude;
-    private double longitude;
+    private long latitude;
+    private long longitude;
     private String name;
     private String imageUrl;
 
-    public double getLatitude() {
+    public long getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(double latitude) {
+    public void setLatitude(long latitude) {
         this.latitude = latitude;
     }
 
-    public double getLongitude() {
+    public long getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(double longitude) {
+    public void setLongitude(long longitude) {
         this.longitude = longitude;
     }
 
