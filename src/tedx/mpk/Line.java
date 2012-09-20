@@ -1,11 +1,12 @@
 package tedx.mpk;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Line {
 
     private int number;
-    private List<Station> stations;
+    private List<Station> stations = new ArrayList<Station>();
 
     public Line() {
 
@@ -20,10 +21,14 @@ public class Line {
     }
 
     public List<Station> getStations() {
-        return stations;
+        return new ArrayList<Station>(stations);
     }
 
     public void setStations(List<Station> stations) {
         this.stations = stations;
+    }
+
+    public void addStation(Station station) {
+        stations.add(station);
     }
 }
