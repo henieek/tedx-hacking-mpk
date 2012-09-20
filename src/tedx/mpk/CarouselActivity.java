@@ -38,7 +38,7 @@ public class CarouselActivity extends FragmentActivity {
 
         @Override
         public Fragment getItem(int position) {
-	    	return TestFragment.newInstance(places.get(position % places.size()));
+	    	return PlaceFragment.newInstance(places.get(position % places.size()));
         }
 
         @Override

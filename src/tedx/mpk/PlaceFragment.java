@@ -2,6 +2,7 @@ package tedx.mpk;
 
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,20 +10,23 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.ViewGroup.LayoutParams;
 
-public final class TestFragment extends Fragment {
+public final class PlaceFragment extends Fragment {
     private static final String KEY_PLACE = "TestFragment:Place";
     private Place mPlace;
     
+    public static String PLACE_KEY = "PLACE_KEY";
+    
 	private TextView mDescrptionText;
 	private ImageView mPlaceImage;
+	private Button mButton;
 	
-    public static TestFragment newInstance(Place place) {
-        TestFragment fragment = new TestFragment();
-
+    public static PlaceFragment newInstance(Place place) {
+        PlaceFragment fragment = new PlaceFragment();
         fragment.mPlace = place;
 
         return fragment;
@@ -38,15 +42,22 @@ public final class TestFragment extends Fragment {
             mPlace = (Place) savedInstanceState.getSerializable(KEY_PLACE);
         }
         
-
-       	
     }
 
     public void onViewCreated(View view, Bundle savedInstanceState){
            	mDescrptionText = (TextView)view.findViewById(R.id.description_text);
            	mPlaceImage = (ImageView)view.findViewById(R.id.monument_image);
     		mDescrptionText.setText(mPlace.getName());
-            UrlImageViewHelper.setUrlDrawable(mPlaceImage, mPlace.getImageUrl());    }
+    		mButton = (Button)view.findViewById(R.id.choose_button);
+    		mButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                	Intent intent = new Intent(getActivity(), RouteActivity.class);
+                	intent.putExtra(PLACE_KEY, mPlace);
+                	startActivity(intent);
+                }
+            });
+            UrlImageViewHelper.setUrlDrawable(mPlaceImage, mPlace.getImageUrl());
+     }
     
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
