@@ -29,12 +29,16 @@ public class RouteActivity extends MapActivity {
         wawelCastle.setImageUrl("http://c.wrzuta.pl/wi4867/2b7f86d4001f73af4fd1e625/wawel_i_klasztory_w_krakowie");
 
         overlays.clear();
+        GeoPoint users = new GeoPoint(50065608, 19946880);
         overlays.addAll(overlaysFromRouteGenerator.getOverlaysForRoute(
-                routeProvider.getRouteFromMyLocation(new GeoPoint(50065608, 19946880), wawelCastle),
+                routeProvider.getRouteFromMyLocation(users, wawelCastle),
                 getResources().getDrawable(R.drawable.point_green)));
 
         mapView.setClickable(true);
 
+
+        mapController.animateTo(users);
+        mapController.setZoom(15);
     }
 
     @Override
