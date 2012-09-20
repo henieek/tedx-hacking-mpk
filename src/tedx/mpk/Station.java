@@ -2,27 +2,27 @@ package tedx.mpk;
 
 public class Station {
 
-    private int latitude;
-    private int longitude;
+    private long latitude;
+    private long longitude;
     private String name;
 
     public Station() {
 
     }
 
-    public int getLatitude() {
+    public long getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(int latitude) {
+    public void setLatitude(long latitude) {
         this.latitude = latitude;
     }
 
-    public int getLongitude() {
+    public long getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(int longitude) {
+    public void setLongitude(long longitude) {
         this.longitude = longitude;
     }
 
