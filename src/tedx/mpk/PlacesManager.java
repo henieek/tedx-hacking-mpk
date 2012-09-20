@@ -11,7 +11,7 @@ public class PlacesManager {
         PLACES = new ArrayList<Place>();
 
         Place miejsce = new Place();
-        miejsce.setName("KoúciÛ≥ Mariacki");
+        miejsce.setName("Ko≈õci√≥≈Ç Mariacki");
         miejsce.setImageUrl(baseUrl + "1.jpg");
         miejsce.setLatitude(50.06179);
         miejsce.setLongitude(19.9371);
