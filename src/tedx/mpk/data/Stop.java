@@ -1,5 +1,8 @@
 package tedx.mpk.data;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import tedx.mpk.Station;
 
 class Stop extends Station {
@@ -11,6 +14,8 @@ class Stop extends Station {
 		setLongitude(lon);
 		setLatitude(lat);
 	}
+	
+	List<Stop> edges = new ArrayList<Stop>();
 	
 	Point getPoint()
 	{
