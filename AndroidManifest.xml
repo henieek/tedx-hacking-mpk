@@ -28,12 +28,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         
          <activity
             android:name=".Carouselctivity"
             android:label="@string/title_carousel" >
   
         </activity>
+
+
+        <activity android:name=".RouteActivity" />
+
+
     </application>
 
 </manifest>
